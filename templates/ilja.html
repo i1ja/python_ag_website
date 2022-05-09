@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilja Ruchay</title>
+</head>
+<body>
+    <h1>Ilja Ruchay</h1>
+    <img src="static/maxmustermann.jpeg" alt="">
+    <h2>persöhnliche Daten:</h2>
+    <ul>
+        <li>Wohnort: Hauptstraße 38, 71126 Gäufelden</li>
+        <li>Geburtstag: 25.10.2006</li>
+        <li>Telefon: 070329159996</li>
+        <li>Mobil: weiß ich nicht auswendig</li>
+        <li>Email: ilja.ruchay@gmail.com</li>
+    </ul>
+    <h2>Skills:</h2>
+    <ul id="skills">
+        {% for item in skills %}
+            <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+    <h2>Bildung:</h2>
+    <ul>
+        <li>20??-20??(klasse 1-4): Grundschule Tailfingen</li>
+        <li>20??-20??(klasse 5-jetzt): Uhlandgymnasium Tübingen</li>
+    </ul>
+    <h2>Sprachen:</h2>
+    <ul>
+        <li>Deutsch</li>
+        <li>Englisch</li>
+        <li>Latein fast fließend ;)</li>
+        <li>Altgriechisch (sehr wichtig)</li>
+    </ul>
+    <h2>Arbeitserfahrung:</h2>
+    <ul><li> </li></ul>
+</body>
+</html>

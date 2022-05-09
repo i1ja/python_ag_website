@@ -1,22 +1,11 @@
-from flask import Flask
-
+from flask import Flask, render_template
 app = Flask(__name__)
 
-@app.route("/<nummer1>/plus/<nummer2>")
-def plus(nummer1,nummer2):
-    nummer3=int(nummer1)+int(nummer2)
-    return "das ergebis ist: "+str(nummer3)
-@app.route("/<nummer1>/minus/<nummer2>")
-def minus(nummer1,nummer2):
-    nummer3=int(nummer1)-int(nummer2)
-    return "das ergebis ist: "+str(nummer3)
-@app.route("/<nummer1>/mal/<nummer2>")
-def mal(nummer1,nummer2):
-    nummer3=int(nummer1)*int(nummer2)
-    return "das ergebis ist: "+str(nummer3)
-@app.route("/<nummer1>/durch/<nummer2>")
-def geteilt(nummer1,nummer2):
-    nummer3=int(nummer1)/int(nummer2)
-    return "das ergebis ist: "+str(nummer3)
+skills=["python","html ;)"]
+@app.route("/")
+def ilja():
+    return render_template("ilja.html", skills=skills)
+
+
 
 app.run(debug=True)
