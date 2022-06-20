@@ -1,1 +1,5 @@
 webdev/
+env/
+__pycache__/
+test.db
+launch.json

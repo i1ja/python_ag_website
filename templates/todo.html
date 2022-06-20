@@ -9,11 +9,23 @@
 <body>
     <ul>
         {%for todo in todos%}
-        <li>{{todo}}</li>
+        <li>{{todo.todo}}
+            <form action="/delete">
+                <input type="hidden" name="id" value={{todo.id}}>
+                <button type="submit">Löschen</button> 
+            </form>
+            
+        </li>
         {%endfor%}
     </ul>
     <form action="/add" method="get">
         <input type="text" name="todo"></form>
     </form>
 </body>
+
+<style>
+    li {
+        display: grid;
+    }
+</style>
 </html>
